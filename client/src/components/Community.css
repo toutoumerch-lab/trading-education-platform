@@ -1,0 +1,168 @@
+.community {
+  padding: 8rem 5%;
+  background-color: var(--bg-card);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.community-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  max-width: 600px;
+}
+
+.community-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.community-header p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.discord-mockup {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  height: 500px;
+  background: #36393f;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  font-family: 'Inter', sans-serif;
+}
+
+.discord-sidebar {
+  width: 250px;
+  background: #2f3136;
+  display: flex;
+  flex-direction: column;
+}
+
+.server-name {
+  padding: 1.2rem 1rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.channels {
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.channel {
+  padding: 0.4rem 0.6rem;
+  color: #8e9297;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.channel:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: #dcddde;
+}
+
+.channel.active {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.discord-chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #36393f;
+}
+
+.chat-header {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-header h3 {
+  font-size: 1.1rem;
+  color: #fff;
+  margin: 0;
+}
+
+.online-count {
+  font-size: 0.85rem;
+  color: var(--accent-teal);
+  font-weight: 600;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  overflow-y: auto;
+}
+
+.message {
+  display: flex;
+  gap: 1rem;
+}
+
+.msg-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.msg-avatar.blue { background: #5865F2; }
+.msg-avatar.admin { background: var(--gradient-brand); }
+.msg-avatar.pink { background: #eb459e; }
+
+.msg-content p {
+  color: #dcddde;
+  margin: 0.3rem 0 0 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.msg-name {
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.msg-name.coach {
+  color: var(--accent-pink);
+}
+
+.msg-time {
+  color: #72767d;
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin-left: 0.5rem;
+}
+
+.chat-input-area {
+  padding: 1rem 1.5rem;
+}
+
+.chat-input {
+  background: #40444b;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  color: #72767d;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .discord-sidebar { display: none; }
+}

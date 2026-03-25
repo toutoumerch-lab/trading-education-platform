@@ -1,0 +1,58 @@
+.founder {
+  padding: 8rem 5%;
+  background-color: var(--bg-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.founder-content {
+  max-width: 800px;
+  background: rgba(255,255,255,0.02);
+  padding: 4rem;
+  border-radius: 16px;
+  border-left: 4px solid var(--accent-teal);
+}
+
+.founder-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.founder-story {
+  font-size: 1.4rem;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+}
+
+.founder-bio {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+
+.founder-signature {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.f-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--gradient-brand);
+}
+
+.founder-signature h4 {
+  font-size: 1.2rem;
+  margin: 0 0 0.2rem 0;
+}
+
+.founder-signature span {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
